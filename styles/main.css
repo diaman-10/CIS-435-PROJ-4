@@ -2,13 +2,14 @@ html{
   background-color: #b3ff99;
 }
 
+
 header{
   background-color: #269900;
   border-bottom: 4px solid black;
-  padding: .5em 2em;
   box-shadow: 10px 10px 10px black;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: auto;
 }
 
 main{
@@ -21,8 +22,42 @@ main h1{
 main p{
   font-size: 150%;
 }
-.mainbtns{
+
+footer{
+  background-color: #269900;
+  border-top: 4px solid black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.main_lnks{
   width: 10%;
   display: inline-block;
   margin: 10px;
+}
+
+#navBar{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#navBar li{
+  float: left;
+}
+#navBar li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#navBar li a:hover{
+  background-color: #111;
+}
+
+#container{
+  position: relative;
+  min-height: 100vh;
 }
