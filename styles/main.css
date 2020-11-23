@@ -1,0 +1,28 @@
+html{
+  background-color: #b3ff99;
+}
+
+header{
+  background-color: #269900;
+  border-bottom: 4px solid black;
+  padding: .5em 2em;
+  box-shadow: 10px 10px 10px black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main{
+  text-align: center;
+}
+
+main h1{
+  font-size: 300%;
+}
+main p{
+  font-size: 150%;
+}
+.mainbtns{
+  width: 10%;
+  display: inline-block;
+  margin: 10px;
+}
