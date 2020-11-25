@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/Project 4/styles/main.css">
     <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src = "/Project 4/scripts/test.js"></script>
+    <script src = "/Project 4/scripts/jquery.js"></script>
   </head>
   <body>
     <header>
@@ -16,6 +16,8 @@
       <ul id ="navBar">
         <li><a href="/Project 4/">Home</a></li>
         <li><a href="">Graph</a></li>
+        <li><a href="">BMI</a></li>
+        <li><a href="">Input Weight</a></li>
         <li style="float: right"><a href="login_page">Login</a></li>
         <li style="float: right"><a href="">Register</a></li>
       </ul>
