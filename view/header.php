@@ -13,12 +13,13 @@
   <body>
     <header>
       <h1>Weight Tracker</h1>
+      <?php global $app_path; ?>
       <ul id ="navBar">
-        <li><a href="/Project 4/">Home</a></li>
-        <li><a href="">Graph</a></li>
-        <li><a href="">BMI</a></li>
-        <li><a href="">Input Weight</a></li>
-        <li style="float: right"><a href="login_page">Login</a></li>
-        <li style="float: right"><a href="">Register</a></li>
+        <li><a id = "home" href=<?php echo $app_path; ?>>Home</a></li>
+        <li><a  id = "chart" href="">Chart</a></li>
+        <li><a id = 'bmi' href="">BMI</a></li>
+        <li><a id = 'inputWeight' href=<?php echo $app_path. 'weight_input'; ?>>Input Weight</a></li>
+        <li id = 'loginlnk'style="float: right"><a href=<?php echo $app_path. 'login_page'; ?>>Login</a></li>
+        <li id = 'registerlnk' style="float: right"><a href="">Register</a></li>
       </ul>
     </header>

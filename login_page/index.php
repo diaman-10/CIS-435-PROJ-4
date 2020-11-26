@@ -1,6 +1,7 @@
 <?php
 require("../model/database.php");
 require("../model/users_db.php");
+require_once("../util/main.php");
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action === NULL) {
@@ -17,10 +18,20 @@ elseif ($action == 'login') {
   $user_name = filter_input(INPUT_POST, 'user_name');
   $pw = filter_input(INPUT_POST, 'pw');
   $login = try_login($user_name, $pw);
-  echo "hello";
+
   if($login == true){
-    // get the users info
+    //get the user
+    $user = get_user($user_name, $pw);
+    //store the login and user information in the session
+    $_SESSION['valid_login'] = true;
+    //store userID, first name, last name
+    $_SESSION['user_id'] = $user['userID'];
+    $_SESSION['first_name'] = $user['firstName'];
+    $_SESSION['last_name'] = $user['lastName'];
+
+    include("welcome_user_page.php");
   }
+
 
 }
 ?>
