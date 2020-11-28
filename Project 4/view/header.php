@@ -20,6 +20,6 @@
         <li><a id = 'bmi' href="">BMI</a></li>
         <li><a id = 'inputWeight' href=<?php echo $app_path. 'weight_input'; ?>>Input Weight</a></li>
         <li id = 'loginlnk'style="float: right"><a href=<?php echo $app_path. 'login_page'; ?>>Login</a></li>
-        <li id = 'registerlnk' style="float: right"><a href="">Register</a></li>
+        <li id = 'registerlnk' style="float: right"><a href=<?php echo $app_path. 'register_page'; ?>>Register</a></li>
       </ul>
     </header>

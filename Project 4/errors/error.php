@@ -1,0 +1,1 @@
+<?php echo 'It no work';?>
