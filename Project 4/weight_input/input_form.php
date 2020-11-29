@@ -1,19 +1,23 @@
 <?php include "../view/header.php" ?>
 <main>
-  <span class = 'info'>
-    <h1>Weight Input</h1>
-    <p>Here you can input your weight</p>
-  </span>
-  <span class = 'center'>
-    <span id = 'input_form'>
-      <label>Weight</label>
-      <input type="text" name="user_weight">
-      <br>
-      <label>Date</label>
-      <input type="text" name="user_date" id = "date">
-      <br>
-      <input type="button"  value="Submit" id="weightbtn">
-    </span>
-  </span>
+<h1>Weight Input</h1>
+<p>Here you can input your weight</p>
+  <form action="." method="post" id = 'input_form'>
+    <input type="hidden" name="action" value="input_weight">
+    <table>
+      <tr>
+        <td>Weight</td>
+        <td><input type="text" name="weight" id="weight"></td>
+      </tr>
+      <tr>
+        <td>Date</td>
+        <td><input type="text" name="user_date" id = "date"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="button" name="weightbtn" value="Submit"></td>
+      </tr>
+    </table>
+  </form>
 </main>
 <?php include "../view/footer.php" ?>

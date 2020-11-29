@@ -21,7 +21,20 @@ $(document).ready(function(){
   //-------------------------weight-input---------------------
   //date picker
   $("#date").datepicker();
-
+  $("#weightbtn").button();
+  //when submit button clicked
+  $("#weightbtn").click(function(){
+    var weight = $("user_weight");
+    var date = $("user_date");
+    var theForm = $("#input_form");
+    
+    if(weight == "" || date==""){
+      alert("Empty Input field please try again");
+    }
+    else {
+      theForm.submit();
+    }
+  });
   //------------------------register user---------------------
   $("#registerbtn").button();
   //when button clicked
