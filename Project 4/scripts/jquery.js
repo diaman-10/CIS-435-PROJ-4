@@ -22,6 +22,25 @@ $(document).ready(function(){
   //date picker
   $("#date").datepicker();
 
+  //------------------------register user---------------------
+  $("#registerbtn").button();
+  //when button clicked
+  $("#registerbtn").click(function(){
+    var userName = $("user_name").val();
+    var pw = $("#password").val();
+    var first_name = $("first_name").val();
+    var last_name = $("last_name").val();
+    var theForm = $("#register_form");
+
+    //validation
+    if(userName == "" || pw == "" || first_name == "" || last_name == ""){
+      alert("Empty Input field please try again");
+    }
+    else{
+      theForm.submit();
+    }
+  });
+
   //---------------------navbar links-------------------------
   //array of all link id's
   var linkarr = ("#home", "#chart", "#bmi", "#inputWeight", "#loginlnk", "#registerlnk");

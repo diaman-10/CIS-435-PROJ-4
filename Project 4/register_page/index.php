@@ -4,41 +4,23 @@ require("../model/users_db.php");
 require_once("../util/main.php");
 
 $action = filter_input(INPUT_POST, 'action');
+if ($action === NULL) {
+    $action = filter_input(INPUT_GET, 'action');
+    if ($action === NULL) {
+        $action = 'registration_form';
+    }
 }
-?>
 
-<!DOCTYPE html>
+if($action == 'registration_form'){
+  include('registration_form.php');
+}
+elseif ($action == 'register_user') {
+  $user_name = filter_input(INPUT_POST, 'username');
+  $pw = filter_input(INPUT_POST, 'password');
+  $first_name = filter_input(INPUT_POST, 'firstName');
+  $last_name = filter_input(INPUT_POST, 'lastName');
 
-<html>
-<h1>Register</h1>
-<form action="register.inc.php" method= "POST">
-<table>
-    <tr>
-        <td>First Name</td>
-        <td><input type="text" name="firstName" required></td>
-    </tr>
-    <tr>
-        <td>Last Name</td>
-        <td><input type="text" name="lastName" required></td>
-    </tr>
-    <tr>
-        <td>User Name</td>
-        <td><input type="text" name="username" required></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><input type="text" name="password" required></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><button type="submit" name="submit">Register</button></td>
-    </tr>
-    
-</table>
-</form>
-
-<a href="/tech_support/product_manager/add_products.php">Add Product</a>
-
-
-</html>
-<?php include '../view/footer.php'; ?>
+  add_user($user_name, $pw, $first_name, $last_name);
+  include('registration_complete.php');
+}
+ ?>

@@ -1,1 +1,1 @@
-<?php echo 'It no work';?>
+<?php $error;?>
