@@ -32,13 +32,8 @@ elseif ($action == 'login') {
     include("welcome_user_page.php");
   }
   else {
-    ?>
-    <html>
-    <script>
-      alert("Your Username or Password is incorrect");
-    </script></html>
-    <?php
-    
+    $error = "Incorrect login information";
+
   }
 
 

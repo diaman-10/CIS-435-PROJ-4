@@ -20,14 +20,14 @@ $(document).ready(function(){
 
   //-------------------------weight-input---------------------
   //date picker
-  $("#date").datepicker();
+  $("#date").datepicker({dateFormat:'yy-mm-dd'});
   $("#weightbtn").button();
   //when submit button clicked
   $("#weightbtn").click(function(){
-    var weight = $("user_weight");
-    var date = $("user_date");
+    var weight = $("#user_weight").val();
+    var date = $("#user_date").val();
     var theForm = $("#input_form");
-    
+
     if(weight == "" || date==""){
       alert("Empty Input field please try again");
     }

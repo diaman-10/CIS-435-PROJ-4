@@ -7,8 +7,5 @@
 
   set_include_path($doc_root . $app_path);
 
-  // start the new session
-  $lifetime = 60 * 60 * 24 * 365; //set lifetime for the session cookie
-  session_set_cookie_params($lifetime);
   //start the session
   session_start();

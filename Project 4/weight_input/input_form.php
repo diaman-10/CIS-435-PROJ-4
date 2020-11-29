@@ -15,7 +15,7 @@
       </tr>
       <tr>
         <td></td>
-        <td><input type="button" name="weightbtn" value="Submit"></td>
+        <td><input type="button" name="weightbtn" value="Submit" id="weightbtn"></td>
       </tr>
     </table>
   </form>
