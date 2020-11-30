@@ -24,11 +24,13 @@ $(document).ready(function(){
   $("#weightbtn").button();
   //when submit button clicked
   $("#weightbtn").click(function(){
-    var weight = $("#user_weight").val();
-    var date = $("#user_date").val();
-    var theForm = $("#input_form");
+    var weight = $("#weight").val();
+    var date = $("#date").val();
+    var feet = $("#feet").val();
+    var inches = $("#inches").val();
+    var theForm = $("#weight_input");
 
-    if(weight == "" || date==""){
+    if(weight == "" || date=="" || feet == "" || inches == ""){
       alert("Empty Input field please try again");
     }
     else {

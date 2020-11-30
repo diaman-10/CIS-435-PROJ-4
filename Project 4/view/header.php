@@ -17,9 +17,10 @@
       <ul id ="navBar">
         <li><a id = "home" href=<?php echo $app_path; ?>>Home</a></li>
         <li><a  id = "chart" href="<?php echo $app_path. 'chart';?>">Chart</a></li>
-        <li><a id = 'bmi' href="">BMI</a></li>
+        <li><a id = 'bmi' href="<?php echo $app_path. 'bmi' ?>">BMI</a></li>
         <li><a id = 'inputWeight' href=<?php echo $app_path. 'weight_input'; ?>>Input Weight</a></li>
-        <li id = 'loginlnk'style="float: right"><a href=<?php echo $app_path. 'login_page'; ?>>Login</a></li>
-        <li id = 'registerlnk' style="float: right"><a href=<?php echo $app_path. 'register_page'; ?>>Register</a></li>
+        <li style="float: right"><a id = 'logoutlnk' href="<?php echo $app_path. 'login_page'. '?action=logout'; ?>">Logout</a></li>
+        <li style="float: right"><a id = 'loginlnk' href=<?php echo $app_path. 'login_page'; ?>>Login</a></li>
+        <li style="float: right"><a  id = 'registerlnk' href=<?php echo $app_path. 'register_page'; ?>>Register</a></li>
       </ul>
     </header>

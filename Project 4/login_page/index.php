@@ -36,7 +36,10 @@ elseif ($action == 'login') {
     $error = "Incorrect login information";
 
   }
-
-
+}
+elseif ($action == 'logout') {
+  $_SESSION = array();
+  session_destroy();
+  include("../index.php");
 }
 ?>

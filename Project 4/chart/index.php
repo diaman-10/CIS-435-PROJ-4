@@ -1,7 +1,7 @@
 <?php
   require("../model/database.php");
   require("../model/weight_db.php");
-  require("../util/main.php");
+  require_once("../util/main.php");
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action === NULL) {
@@ -34,7 +34,6 @@ if ($action == 'display_chart') {
 
   }
   else{
-    $error = "Please login to access this page";
     include("../errors/no_login.php");
   }
 }
