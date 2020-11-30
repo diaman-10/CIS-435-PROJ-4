@@ -25,7 +25,6 @@ elseif ($action == 'login') {
     //store the login and user information in the session
     $_SESSION['valid_login'] = true;
     //store userID, first name, last name
-    echo $user['userID'];
     $_SESSION['user_id'] = $user['userID'];
     $_SESSION['first_name'] = $user['firstName'];
     $_SESSION['last_name'] = $user['lastName'];

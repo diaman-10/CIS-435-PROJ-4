@@ -1,8 +1,6 @@
 
 <?php include "../view/header.php" ?>
-<?php ; ?>
 <main>
-
   <!--script files for the chart-->
   <script src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
@@ -44,6 +42,5 @@
     </script>
   <h1>Chart</h1>
   <span id = 'chartcontainer'></span>
-
 </main>
 <?php include "../view/footer.php" ?>

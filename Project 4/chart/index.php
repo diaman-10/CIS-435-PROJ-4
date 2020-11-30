@@ -31,7 +31,6 @@ if ($action == 'display_chart') {
       $error = "There is no weight input please input weight to use the chart";
       include("../errors/error.php");
     }
-
   }
   else{
     include("../errors/no_login.php");

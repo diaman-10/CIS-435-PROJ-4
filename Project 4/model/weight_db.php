@@ -25,7 +25,7 @@ function is_there_data($user_id){
   $execStatement = $db->prepare($query);
   $execStatement->bindValue(':user_id', $user_id);
   $execStatement->execute();
-  $rowCount = $execStatement->fetchAll();
+  $rowCount = $execStatement->rowCount();
   $execStatement->closeCursor();
 
   if($rowCount == 0){
