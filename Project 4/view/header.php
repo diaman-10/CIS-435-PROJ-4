@@ -16,7 +16,7 @@
       <?php global $app_path; ?>
       <ul id ="navBar">
         <li><a id = "home" href=<?php echo $app_path; ?>>Home</a></li>
-        <li><a  id = "chart" href="">Chart</a></li>
+        <li><a  id = "chart" href="<?php echo $app_path. 'chart';?>">Chart</a></li>
         <li><a id = 'bmi' href="">BMI</a></li>
         <li><a id = 'inputWeight' href=<?php echo $app_path. 'weight_input'; ?>>Input Weight</a></li>
         <li id = 'loginlnk'style="float: right"><a href=<?php echo $app_path. 'login_page'; ?>>Login</a></li>

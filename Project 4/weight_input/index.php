@@ -27,7 +27,9 @@ elseif ($action == 'input_weight') {
   $weight = filter_input(INPUT_POST, 'weight');
   $date = filter_input(INPUT_POST, 'user_date');
 
-  add_weight($weight, $date);
+  //get userid from session
+  $user_id = $_SESSION['user_id'];
+  add_weight($user_id$weight, $date);
   header("Location: .?weight=$weight");
 }
  ?>
