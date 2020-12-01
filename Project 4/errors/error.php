@@ -1,5 +1,8 @@
 <?php include '../view/header.php' ?>
 <main>
-  <p><?php echo $error ?></p>
+  <span class = heading_text>
+    <p><?php echo $error ?></p>
+  </span>
+
 </main>
 <?php include '../view/footer.php' ?>

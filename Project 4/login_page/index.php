@@ -40,5 +40,6 @@ elseif ($action == 'logout') {
   $_SESSION = array();
   session_destroy();
   include("../index.php");
+
 }
 ?>

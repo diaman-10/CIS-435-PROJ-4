@@ -1,7 +1,9 @@
 <?php include "../view/header.php" ?>
   <main>
-    <h1>Body Mass Index</h1>
-    <p>Here is your BMI from your last weight input</p>
+    <span class = "heading_text">
+      <h1>Body Mass Index</h1>
+      <p>Here is your BMI from your last weight input</p>
+    </span>
     <span id = 'center'>
     <img id = 'bmi_chart' src="../images/Bmi-chart.jpg" alt="BMI chart">
     <h2>Your BMI is:</h2>

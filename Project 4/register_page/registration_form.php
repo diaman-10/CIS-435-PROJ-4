@@ -1,7 +1,11 @@
 <?php include "../view/header.php" ?>
 <main>
-<h1>Register</h1>
-  <form action="." method="post" id = 'register_form'>
+  <span class="heading_text">
+    <h1>Register</h1>
+    <p>Please input all of the necessary information to register for your account</p>
+  </span>
+
+  <form action="." method="post" id = 'register_form' class = "input_format">
     <input type="hidden" name="action" value="register_user">
     <table>
         <tr>

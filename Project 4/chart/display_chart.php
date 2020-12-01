@@ -29,10 +29,18 @@
         var options = {
           chart: {
             title: 'Weight Over Time',
-            subtitle: '(lbs)'
-          },
-          width: 900,
-          height: 500
+            subtitle: '(lbs)',
+            pointSize: 20,
+
+            },
+            hAxis: {
+              gridlines: {color: '#808080', count: 3}
+            },
+            vAxis: {
+              gridlines: {color: '#808080', count: 4}
+            },
+            width: 900,
+            height: 500,
         };
 
         var chart = new google.charts.Line(document.getElementById('chartcontainer'));
@@ -40,7 +48,11 @@
       }
     });
     </script>
-  <h1>Chart</h1>
+    <span class="heading_text">
+      <h1>Chart</h1>
+      <p>Here you can see all of your weight inputs</p>
+    </span>
+
   <span id = 'chartcontainer'></span>
 </main>
 <?php include "../view/footer.php" ?>

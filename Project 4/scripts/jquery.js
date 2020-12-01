@@ -36,7 +36,8 @@ $(document).ready(function(){
     else {
       theForm.submit();
     }
-  });
+  }); //end click function
+
   //------------------------register user---------------------
   $("#registerbtn").button();
   //when button clicked
@@ -54,15 +55,6 @@ $(document).ready(function(){
     else{
       theForm.submit();
     }
-  });
+  }); //end click function
 
-  //---------------------navbar links-------------------------
-  //array of all link id's
-  var linkarr = ("#home", "#chart", "#bmi", "#inputWeight", "#loginlnk", "#registerlnk");
-  //function to remove active style change and reactivate link
-  function changeActive(){
-
-  }
-  //change styles and make links unclickable if clicked
-  //$("#home").click(fu
 }); // end ready

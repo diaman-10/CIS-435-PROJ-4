@@ -1,8 +1,11 @@
 <?php include "../view/header.php" ?>
 <main>
-<h1>Weight Input</h1>
-<p>Here you can input your weight and height</p>
-  <form action="." method="post" id = 'weight_input' >
+  <span class="heading_text">
+    <h1>Weight Input</h1>
+    <p>Here you can input your weight and height</p>
+  </span>
+
+  <form action="." method="post" id = 'weight_input' class = "input_format">
     <input type="hidden" name="action" value="input_weight">
     <table>
       <tr>
