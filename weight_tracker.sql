@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2020 at 02:19 AM
+-- Generation Time: Dec 01, 2020 at 01:34 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -40,7 +40,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `username`, `password`, `firstName`, `lastName`) VALUES
-(1, 'rjhiggin', 'password', 'Ryan', 'Higgins');
+(1, 'rjhiggin', 'password', 'Ryan', 'Higgins'),
+(2, 'jsmith', 'pw', 'Jim', 'Smith');
 
 -- --------------------------------------------------------
 
@@ -51,8 +52,22 @@ INSERT INTO `users` (`userID`, `username`, `password`, `firstName`, `lastName`) 
 CREATE TABLE `weight` (
   `userID` int(11) NOT NULL,
   `weight` decimal(5,2) NOT NULL,
+  `feet` int(1) NOT NULL,
+  `inches` int(2) NOT NULL,
   `inputDate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `weight`
+--
+
+INSERT INTO `weight` (`userID`, `weight`, `feet`, `inches`, `inputDate`) VALUES
+(1, '210.00', 6, 1, '2020-11-03'),
+(1, '220.00', 6, 1, '2020-11-04'),
+(1, '225.00', 6, 1, '2020-11-06'),
+(1, '210.00', 6, 1, '2020-11-11'),
+(1, '215.00', 6, 1, '2020-11-27'),
+(1, '210.00', 6, 1, '2020-11-30');
 
 --
 -- Indexes for dumped tables
@@ -79,7 +94,7 @@ ALTER TABLE `weight`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
